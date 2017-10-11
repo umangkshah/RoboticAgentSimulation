@@ -51,7 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\MainPlayer.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>H:/Mutlimedia Systems Project/RoboticAgentSimulation/VirtualRobot/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
