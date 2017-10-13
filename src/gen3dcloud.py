@@ -11,8 +11,16 @@ class Point3d:
     self.z = z  
   
   def __str__(self):
-    txt = "rgb: "+ str(self.rgb)+ " coord: "+str(self.x)+","+str(self.y)+","+str(self.z)+"\n"
+    txt = str(self.x)+","+str(self.y)+","+str(self.z)+","+str(self.rgb[0])+","+str(self.rgb[1])+","+str(self.rgb[2])+"\n"
     return txt
+    
+  def write_file(p3list, fname):
+    fout = open(fname,'w')
+    for p3d in p3list:
+      fout.write(str(p3d))
+    fout.close()
+      
+    
 
 def project(cloud):
   image = np.zeros((height,width,3), np.uint8)
@@ -40,7 +48,14 @@ def main():
         x3d = ((x2d - cxy[0] - shx2d)/fxy[0]) * z3d
         pointcloud.append(Point3d(rgb,x3d,y3d,z3d))
 #      print("color : ", colImg[i][j])#the rgb value
-   project(pointcloud)
-   
-main()
+   #project(pointcloud)
+  Point3d.write_file(pointcloud,"./pcloud.csv")
 
+main()
+'''
+p3list = []
+p3list.append(Point3d([1,1,1],5,6,7))
+p3list.append(Point3d([1,1,1],5,6,7))
+p3list.append(Point3d([1,1,1],5,6,7))
+Point3d.write_file(p3list,"./pcloud.csv")
+'''
