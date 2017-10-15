@@ -52,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\MainPlayer.cs" />
+     <Compile Include="Assets\PointCloud\Scripts\EnablePointSize.cs" />
+     <Compile Include="Assets\PointCloud\Scripts\PointCloudManager.cs" />
+     <Compile Include="Assets\RenderPC.cs" />
+     <None Include="Assets\PointCloud\Shaders\VertexColor.shader" />
+     <None Include="Assets\PointCloud\Readme.txt" />
+     <None Include="Assets\ShaderPC.shader" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>H:/Mutlimedia Systems Project/RoboticAgentSimulation/VirtualRobot/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
