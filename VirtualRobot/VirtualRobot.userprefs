@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MainPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PointCloud\Readme.txt">
     <Files>
-      <File FileName="Assets\MainPlayer.cs" Line="11" Column="33" />
+      <File FileName="Assets\PointCloud\Readme.txt" Line="24" Column="60" />
+      <File FileName="Assets\PointCloud\Scripts\PointCloudManager.cs" Line="93" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
