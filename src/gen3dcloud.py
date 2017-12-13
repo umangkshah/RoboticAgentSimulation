@@ -15,7 +15,9 @@ class Point3d:
     return txt
     
   def write_file(p3list, fname):
-    fout = open(fname,'w')
+	i = 1
+    fout = open(fname+i+".csv",'w')
+	count = 0
     for p3d in p3list:
       fout.write(str(p3d))
     fout.close()
@@ -49,7 +51,7 @@ def main():
         pointcloud.append(Point3d(rgb,x3d,y3d,z3d))
 #      print("color : ", colImg[i][j])#the rgb value
    #project(pointcloud)
-  Point3d.write_file(pointcloud,"./pcloud.csv")
+  Point3d.write_file(pointcloud,"./pcloud")
 
 main()
 '''
